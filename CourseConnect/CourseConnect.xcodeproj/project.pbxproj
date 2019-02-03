@@ -66,6 +66,7 @@
 		E510EAF32206C14B004F3E5C /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		E510EAF72206D5DE004F3E5C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E510EAF92206DD26004F3E5C /* QuestionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTableViewController.swift; sourceTree = "<group>"; };
+		E510EAFB2206FFCB004F3E5C /* CourseConnect.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CourseConnect.entitlements; sourceTree = "<group>"; };
 		FCC859CA154F10C660AB7ABA /* Pods-CourseConnectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CourseConnectTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CourseConnectTests/Pods-CourseConnectTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,6 +146,7 @@
 		E510EAB92206B834004F3E5C /* CourseConnect */ = {
 			isa = PBXGroup;
 			children = (
+				E510EAFB2206FFCB004F3E5C /* CourseConnect.entitlements */,
 				E510EAEC2206BD0D004F3E5C /* ViewControllers */,
 				E510EAEA2206BBFD004F3E5C /* GoogleService-Info.plist */,
 				E510EABA2206B834004F3E5C /* AppDelegate.swift */,
@@ -260,6 +262,9 @@
 						CreatedOnToolsVersion = 10.1;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
 								enabled = 1;
 							};
 						};
@@ -634,6 +639,7 @@
 			baseConfigurationReference = 917F02CD7E2DFC2F1A156375 /* Pods-CourseConnect.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CourseConnect/CourseConnect.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HJRJT5BABU;
 				INFOPLIST_FILE = CourseConnect/Info.plist;
@@ -642,7 +648,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ggi.CourseConnect;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ggi.CourseConnectApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -654,6 +660,7 @@
 			baseConfigurationReference = BA6F5F9E37C7A9F729B2DE93 /* Pods-CourseConnect.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CourseConnect/CourseConnect.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HJRJT5BABU;
 				INFOPLIST_FILE = CourseConnect/Info.plist;
@@ -662,7 +669,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ggi.CourseConnect;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ggi.CourseConnectApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;

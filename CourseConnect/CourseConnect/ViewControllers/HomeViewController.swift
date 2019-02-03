@@ -35,6 +35,7 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        Firestore.firestore().collection("users").document((Auth.auth().currentUser?.uid)!).updateData(["push": Messaging.messaging().fcmToken])
        
         
         Firestore.firestore().collection("users").document((Auth.auth().currentUser?.uid)!).getDocument { (doc, err) in
@@ -68,6 +69,8 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.allowsBackgroundLocationUpdates = true
         locationManager.pausesLocationUpdatesAutomatically = false
         locationManager.requestAlwaysAuthorization()
+        
+        locationManager.startUpdatingLocation()
         
         if let uuid = UUID(uuidString: self.uuid) {
             let beaconRegion = CLBeaconRegion(

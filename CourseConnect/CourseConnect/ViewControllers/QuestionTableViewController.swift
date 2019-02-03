@@ -13,6 +13,7 @@ class QuestionTableViewController: UITableViewController {
 
     var question: DocumentSnapshot!
     var data = [String]()
+    let uuid = "e20a39f4-73f5-4bc4-a12f-17d1ad07a965"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,23 +66,26 @@ class QuestionTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-       
-        Firestore.firestore().collection("classes").document("TestBeacon").collection("questions").document(self.question.documentID).collection("voters").document(Auth.auth().currentUser!.uid).setData(["time": "time"])
+        if indexPath.row == 0{
+            
+        }else{
+        Firestore.firestore().collection("classes").document(self.uuid).collection("questions").document(self.question.documentID).collection("voters").document(Auth.auth().currentUser!.uid).setData(["time": "time"])
         
         if indexPath.row == 1{
-            Firestore.firestore().collection("classes").document("TestBeacon").collection("questions").document(self.question.documentID).collection("aVoters").document(Auth.auth().currentUser!.uid).setData(["time": "time"])
+            Firestore.firestore().collection("classes").document(self.uuid).collection("questions").document(self.question.documentID).collection("aVoters").document(Auth.auth().currentUser!.uid).setData(["time": "time"])
         }
         if indexPath.row == 2{
-            Firestore.firestore().collection("classes").document("TestBeacon").collection("questions").document(self.question.documentID).collection("bVoters").document(Auth.auth().currentUser!.uid).setData(["time": "time"])
+            Firestore.firestore().collection("classes").document(self.uuid).collection("questions").document(self.question.documentID).collection("bVoters").document(Auth.auth().currentUser!.uid).setData(["time": "time"])
         }
         if indexPath.row == 3{
-            Firestore.firestore().collection("classes").document("TestBeacon").collection("questions").document(self.question.documentID).collection("cVoters").document(Auth.auth().currentUser!.uid).setData(["time": "time"])
+            Firestore.firestore().collection("classes").document(self.uuid).collection("questions").document(self.question.documentID).collection("cVoters").document(Auth.auth().currentUser!.uid).setData(["time": "time"])
         }
         if indexPath.row == 4{
-            Firestore.firestore().collection("classes").document("TestBeacon").collection("questions").document(self.question.documentID).collection("dVoters").document(Auth.auth().currentUser!.uid).setData(["time": "time"])
+            Firestore.firestore().collection("classes").document(self.uuid).collection("questions").document(self.question.documentID).collection("dVoters").document(Auth.auth().currentUser!.uid).setData(["time": "time"])
         }
         
         self.performSegue(withIdentifier: "Question->Home", sender: self)
+        }
     
     }
     
