@@ -10,6 +10,9 @@ import UIKit
 import Firebase
 
 class HomeViewController: UIViewController {
+    
+    var QDoc: DocumentSnapshot!
+    
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var bannerLabel: UILabel!
     
@@ -33,11 +36,29 @@ class HomeViewController: UIViewController {
                 self.emailLabel.text = doc?.data()!["email"] as! String
                 self.bannerLabel.text = doc?.data()!["banner"] as! String
             }
+            
+            Firestore.firestore().collection("classes").document("TestBeacon").collection("questions").addSnapshotListener({ (snaps, err) in
+                snaps?.documents.forEach({ (doc) in
+                    if doc.data()["start"] as! String != "none"{
+                        
+                        doc.reference.collection("voters").document((Auth.auth().currentUser?.uid)!).getDocument(completion: { (d, e) in
+                            if e == nil && !(d?.exists)!{
+                                self.QDoc = doc
+                                self.performSegue(withIdentifier: "Home->Question", sender: self)
+                            }
+                        })
+                    }
+                })
+            })
         }
 
         // Do any additional setup after loading the view.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let dest = segue.destination as! QuestionTableViewController
+        dest.question = self.QDoc
+    }
 
     /*
     // MARK: - Navigation

@@ -181,15 +181,77 @@
                         <outlet property="bannerLabel" destination="egL-zd-zBr" id="oOs-y6-p5N"/>
                         <outlet property="emailLabel" destination="zsa-Uq-hpa" id="yVG-d9-pLq"/>
                         <segue destination="UzF-Rt-BIA" kind="showDetail" identifier="Home-&gt;Login" id="NLx-dZ-yFd"/>
+                        <segue destination="Y3r-Uc-JAe" kind="showDetail" identifier="Home-&gt;Question" id="E8s-jn-cHn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kzv-na-wWI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3156" y="33"/>
         </scene>
+        <!--Question Table View Controller-->
+        <scene sceneID="QwN-yK-Iy9">
+            <objects>
+                <tableViewController id="Y3r-Uc-JAe" customClass="QuestionTableViewController" customModule="CourseConnect" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="lYH-Jb-RCC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.47450980390000003" green="0.61960784310000006" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="Question" textLabel="XYP-YS-73u" style="IBUITableViewCellStyleDefault" id="L7Q-tE-jv5">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="L7Q-tE-jv5" id="b3d-EU-Efj">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XYP-YS-73u">
+                                            <rect key="frame" x="15" y="0.0" width="344" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                            <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.47450980390000003" green="0.61960784310000006" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.47450980390000003" green="0.61960784310000006" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Answer" textLabel="9kZ-tk-xYw" style="IBUITableViewCellStyleDefault" id="j28-dh-uvs">
+                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="j28-dh-uvs" id="2wR-1F-djf">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9kZ-tk-xYw">
+                                            <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.47450980390000003" green="0.61960784310000006" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Y3r-Uc-JAe" id="OkW-xw-nlo"/>
+                            <outlet property="delegate" destination="Y3r-Uc-JAe" id="7QM-7R-I9E"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <segue destination="dY7-cO-CwG" kind="showDetail" identifier="Question-&gt;Home" id="F2w-Nv-0Hd"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mI6-l0-UCI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4134" y="33"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="KQ6-ce-MwF"/>
+        <segue reference="F2w-Nv-0Hd"/>
         <segue reference="NLx-dZ-yFd"/>
     </inferredMetricsTieBreakers>
 </document>

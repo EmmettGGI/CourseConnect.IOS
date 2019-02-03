@@ -19,6 +19,7 @@
 		E510EAEE2206BD36004F3E5C /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E510EAED2206BD36004F3E5C /* LaunchViewController.swift */; };
 		E510EAF42206C14B004F3E5C /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E510EAF32206C14B004F3E5C /* LogInViewController.swift */; };
 		E510EAF82206D5DE004F3E5C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E510EAF72206D5DE004F3E5C /* HomeViewController.swift */; };
+		E510EAFA2206DD26004F3E5C /* QuestionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E510EAF92206DD26004F3E5C /* QuestionTableViewController.swift */; };
 		ECCF7E665AB293338BDA9232 /* Pods_CourseConnectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD6ADF45220F793AD6BE465B /* Pods_CourseConnectUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		E510EAED2206BD36004F3E5C /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		E510EAF32206C14B004F3E5C /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		E510EAF72206D5DE004F3E5C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E510EAF92206DD26004F3E5C /* QuestionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTableViewController.swift; sourceTree = "<group>"; };
 		FCC859CA154F10C660AB7ABA /* Pods-CourseConnectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CourseConnectTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CourseConnectTests/Pods-CourseConnectTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -178,6 +180,7 @@
 				E510EAED2206BD36004F3E5C /* LaunchViewController.swift */,
 				E510EAF32206C14B004F3E5C /* LogInViewController.swift */,
 				E510EAF72206D5DE004F3E5C /* HomeViewController.swift */,
+				E510EAF92206DD26004F3E5C /* QuestionTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -448,6 +451,7 @@
 			files = (
 				E510EAEE2206BD36004F3E5C /* LaunchViewController.swift in Sources */,
 				E510EABB2206B834004F3E5C /* AppDelegate.swift in Sources */,
+				E510EAFA2206DD26004F3E5C /* QuestionTableViewController.swift in Sources */,
 				E510EAF42206C14B004F3E5C /* LogInViewController.swift in Sources */,
 				E510EAF82206D5DE004F3E5C /* HomeViewController.swift in Sources */,
 			);
