@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E510EABB2206B834004F3E5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E510EABA2206B834004F3E5C /* AppDelegate.swift */; };
+		E510EABD2206B834004F3E5C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E510EABC2206B834004F3E5C /* ViewController.swift */; };
+		E510EAC02206B834004F3E5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E510EABE2206B834004F3E5C /* Main.storyboard */; };
+		E510EAC22206B836004F3E5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E510EAC12206B836004F3E5C /* Assets.xcassets */; };
+		E510EAC52206B836004F3E5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E510EAC32206B836004F3E5C /* LaunchScreen.storyboard */; };
+		E510EAD02206B836004F3E5C /* CourseConnectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E510EACF2206B836004F3E5C /* CourseConnectTests.swift */; };
+		E510EADB2206B836004F3E5C /* CourseConnectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E510EADA2206B836004F3E5C /* CourseConnectUITests.swift */; };
+		E510EAE92206B953004F3E5C /* GoogleService-Info-3.plist in Resources */ = {isa = PBXBuildFile; fileRef = E510EAE82206B953004F3E5C /* GoogleService-Info-3.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E510EACC2206B836004F3E5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E510EAAF2206B834004F3E5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E510EAB62206B834004F3E5C;
+			remoteInfo = CourseConnect;
+		};
+		E510EAD72206B836004F3E5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E510EAAF2206B834004F3E5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E510EAB62206B834004F3E5C;
+			remoteInfo = CourseConnect;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E510EAB72206B834004F3E5C /* CourseConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CourseConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E510EABA2206B834004F3E5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E510EABC2206B834004F3E5C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E510EABF2206B834004F3E5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E510EAC12206B836004F3E5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E510EAC42206B836004F3E5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E510EAC62206B836004F3E5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E510EACB2206B836004F3E5C /* CourseConnectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CourseConnectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E510EACF2206B836004F3E5C /* CourseConnectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseConnectTests.swift; sourceTree = "<group>"; };
+		E510EAD12206B836004F3E5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E510EAD62206B836004F3E5C /* CourseConnectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CourseConnectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E510EADA2206B836004F3E5C /* CourseConnectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseConnectUITests.swift; sourceTree = "<group>"; };
+		E510EADC2206B836004F3E5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E510EAE82206B953004F3E5C /* GoogleService-Info-3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info-3.plist"; path = "../../../../Downloads/GoogleService-Info-3.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E510EAB42206B834004F3E5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E510EAC82206B836004F3E5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E510EAD32206B836004F3E5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E510EAAE2206B834004F3E5C = {
+			isa = PBXGroup;
+			children = (
+				E510EAB92206B834004F3E5C /* CourseConnect */,
+				E510EACE2206B836004F3E5C /* CourseConnectTests */,
+				E510EAD92206B836004F3E5C /* CourseConnectUITests */,
+				E510EAB82206B834004F3E5C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E510EAB82206B834004F3E5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E510EAB72206B834004F3E5C /* CourseConnect.app */,
+				E510EACB2206B836004F3E5C /* CourseConnectTests.xctest */,
+				E510EAD62206B836004F3E5C /* CourseConnectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E510EAB92206B834004F3E5C /* CourseConnect */ = {
+			isa = PBXGroup;
+			children = (
+				E510EABA2206B834004F3E5C /* AppDelegate.swift */,
+				E510EABC2206B834004F3E5C /* ViewController.swift */,
+				E510EABE2206B834004F3E5C /* Main.storyboard */,
+				E510EAC12206B836004F3E5C /* Assets.xcassets */,
+				E510EAC32206B836004F3E5C /* LaunchScreen.storyboard */,
+				E510EAC62206B836004F3E5C /* Info.plist */,
+				E510EAE82206B953004F3E5C /* GoogleService-Info-3.plist */,
+			);
+			path = CourseConnect;
+			sourceTree = "<group>";
+		};
+		E510EACE2206B836004F3E5C /* CourseConnectTests */ = {
+			isa = PBXGroup;
+			children = (
+				E510EACF2206B836004F3E5C /* CourseConnectTests.swift */,
+				E510EAD12206B836004F3E5C /* Info.plist */,
+			);
+			path = CourseConnectTests;
+			sourceTree = "<group>";
+		};
+		E510EAD92206B836004F3E5C /* CourseConnectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E510EADA2206B836004F3E5C /* CourseConnectUITests.swift */,
+				E510EADC2206B836004F3E5C /* Info.plist */,
+			);
+			path = CourseConnectUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E510EAB62206B834004F3E5C /* CourseConnect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E510EADF2206B836004F3E5C /* Build configuration list for PBXNativeTarget "CourseConnect" */;
+			buildPhases = (
+				E510EAB32206B834004F3E5C /* Sources */,
+				E510EAB42206B834004F3E5C /* Frameworks */,
+				E510EAB52206B834004F3E5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CourseConnect;
+			productName = CourseConnect;
+			productReference = E510EAB72206B834004F3E5C /* CourseConnect.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E510EACA2206B836004F3E5C /* CourseConnectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E510EAE22206B836004F3E5C /* Build configuration list for PBXNativeTarget "CourseConnectTests" */;
+			buildPhases = (
+				E510EAC72206B836004F3E5C /* Sources */,
+				E510EAC82206B836004F3E5C /* Frameworks */,
+				E510EAC92206B836004F3E5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E510EACD2206B836004F3E5C /* PBXTargetDependency */,
+			);
+			name = CourseConnectTests;
+			productName = CourseConnectTests;
+			productReference = E510EACB2206B836004F3E5C /* CourseConnectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E510EAD52206B836004F3E5C /* CourseConnectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E510EAE52206B836004F3E5C /* Build configuration list for PBXNativeTarget "CourseConnectUITests" */;
+			buildPhases = (
+				E510EAD22206B836004F3E5C /* Sources */,
+				E510EAD32206B836004F3E5C /* Frameworks */,
+				E510EAD42206B836004F3E5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E510EAD82206B836004F3E5C /* PBXTargetDependency */,
+			);
+			name = CourseConnectUITests;
+			productName = CourseConnectUITests;
+			productReference = E510EAD62206B836004F3E5C /* CourseConnectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E510EAAF2206B834004F3E5C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Emmett Deen";
+				TargetAttributes = {
+					E510EAB62206B834004F3E5C = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					E510EACA2206B836004F3E5C = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = E510EAB62206B834004F3E5C;
+					};
+					E510EAD52206B836004F3E5C = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = E510EAB62206B834004F3E5C;
+					};
+				};
+			};
+			buildConfigurationList = E510EAB22206B834004F3E5C /* Build configuration list for PBXProject "CourseConnect" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E510EAAE2206B834004F3E5C;
+			productRefGroup = E510EAB82206B834004F3E5C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E510EAB62206B834004F3E5C /* CourseConnect */,
+				E510EACA2206B836004F3E5C /* CourseConnectTests */,
+				E510EAD52206B836004F3E5C /* CourseConnectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E510EAB52206B834004F3E5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E510EAC52206B836004F3E5C /* LaunchScreen.storyboard in Resources */,
+				E510EAC22206B836004F3E5C /* Assets.xcassets in Resources */,
+				E510EAC02206B834004F3E5C /* Main.storyboard in Resources */,
+				E510EAE92206B953004F3E5C /* GoogleService-Info-3.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E510EAC92206B836004F3E5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E510EAD42206B836004F3E5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E510EAB32206B834004F3E5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E510EABD2206B834004F3E5C /* ViewController.swift in Sources */,
+				E510EABB2206B834004F3E5C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E510EAC72206B836004F3E5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E510EAD02206B836004F3E5C /* CourseConnectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E510EAD22206B836004F3E5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E510EADB2206B836004F3E5C /* CourseConnectUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E510EACD2206B836004F3E5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E510EAB62206B834004F3E5C /* CourseConnect */;
+			targetProxy = E510EACC2206B836004F3E5C /* PBXContainerItemProxy */;
+		};
+		E510EAD82206B836004F3E5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E510EAB62206B834004F3E5C /* CourseConnect */;
+			targetProxy = E510EAD72206B836004F3E5C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E510EABE2206B834004F3E5C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E510EABF2206B834004F3E5C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E510EAC32206B836004F3E5C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E510EAC42206B836004F3E5C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E510EADD2206B836004F3E5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E510EADE2206B836004F3E5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E510EAE02206B836004F3E5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HJRJT5BABU;
+				INFOPLIST_FILE = CourseConnect/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ggi.CourseConnect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E510EAE12206B836004F3E5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HJRJT5BABU;
+				INFOPLIST_FILE = CourseConnect/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ggi.CourseConnect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E510EAE32206B836004F3E5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HJRJT5BABU;
+				INFOPLIST_FILE = CourseConnectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ggi.CourseConnectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CourseConnect.app/CourseConnect";
+			};
+			name = Debug;
+		};
+		E510EAE42206B836004F3E5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HJRJT5BABU;
+				INFOPLIST_FILE = CourseConnectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ggi.CourseConnectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CourseConnect.app/CourseConnect";
+			};
+			name = Release;
+		};
+		E510EAE62206B836004F3E5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HJRJT5BABU;
+				INFOPLIST_FILE = CourseConnectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ggi.CourseConnectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CourseConnect;
+			};
+			name = Debug;
+		};
+		E510EAE72206B836004F3E5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HJRJT5BABU;
+				INFOPLIST_FILE = CourseConnectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ggi.CourseConnectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CourseConnect;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E510EAB22206B834004F3E5C /* Build configuration list for PBXProject "CourseConnect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E510EADD2206B836004F3E5C /* Debug */,
+				E510EADE2206B836004F3E5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E510EADF2206B836004F3E5C /* Build configuration list for PBXNativeTarget "CourseConnect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E510EAE02206B836004F3E5C /* Debug */,
+				E510EAE12206B836004F3E5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E510EAE22206B836004F3E5C /* Build configuration list for PBXNativeTarget "CourseConnectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E510EAE32206B836004F3E5C /* Debug */,
+				E510EAE42206B836004F3E5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E510EAE52206B836004F3E5C /* Build configuration list for PBXNativeTarget "CourseConnectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E510EAE62206B836004F3E5C /* Debug */,
+				E510EAE72206B836004F3E5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E510EAAF2206B834004F3E5C /* Project object */;
+}
