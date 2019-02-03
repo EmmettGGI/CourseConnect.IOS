@@ -162,11 +162,19 @@
                                     <action selector="logout:" destination="dY7-cO-CwG" eventType="touchUpInside" id="cZQ-p6-8cx"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txF-bw-wLU">
+                                <rect key="frame" x="166.5" y="169" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.47450980390000003" green="0.61960784310000006" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="ZYk-xp-dVx" firstAttribute="centerX" secondItem="oTJ-Ua-pCJ" secondAttribute="centerX" id="0XU-DS-7E4"/>
+                            <constraint firstItem="txF-bw-wLU" firstAttribute="centerX" secondItem="oTJ-Ua-pCJ" secondAttribute="centerX" id="1de-La-7d5"/>
                             <constraint firstItem="zsa-Uq-hpa" firstAttribute="top" secondItem="15G-Ah-nft" secondAttribute="top" constant="80" id="3Y6-kU-bIc"/>
+                            <constraint firstItem="txF-bw-wLU" firstAttribute="top" secondItem="egL-zd-zBr" secondAttribute="bottom" constant="8" id="4d4-8F-DUE"/>
                             <constraint firstItem="8hh-hg-kbH" firstAttribute="centerY" secondItem="oTJ-Ua-pCJ" secondAttribute="centerY" id="6Kn-QY-t2s"/>
                             <constraint firstItem="8hh-hg-kbH" firstAttribute="centerX" secondItem="oTJ-Ua-pCJ" secondAttribute="centerX" id="BQG-xu-g2p"/>
                             <constraint firstItem="15G-Ah-nft" firstAttribute="bottom" secondItem="ZYk-xp-dVx" secondAttribute="bottom" constant="30" id="Ewt-bR-TMe"/>
@@ -179,6 +187,7 @@
                     </view>
                     <connections>
                         <outlet property="bannerLabel" destination="egL-zd-zBr" id="oOs-y6-p5N"/>
+                        <outlet property="distanceLabel" destination="txF-bw-wLU" id="c2l-A5-i2c"/>
                         <outlet property="emailLabel" destination="zsa-Uq-hpa" id="yVG-d9-pLq"/>
                         <segue destination="UzF-Rt-BIA" kind="showDetail" identifier="Home-&gt;Login" id="NLx-dZ-yFd"/>
                         <segue destination="Y3r-Uc-JAe" kind="showDetail" identifier="Home-&gt;Question" id="E8s-jn-cHn"/>
@@ -251,6 +260,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="E8s-jn-cHn"/>
         <segue reference="F2w-Nv-0Hd"/>
         <segue reference="NLx-dZ-yFd"/>
     </inferredMetricsTieBreakers>
