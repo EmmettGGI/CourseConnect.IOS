@@ -1,0 +1,6 @@
+framework module Pods_CourseConnectTests {
+  umbrella header "Pods-CourseConnectTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
